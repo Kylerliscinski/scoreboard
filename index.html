@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="debug bg-image text-center text-white p-5">
+<body class="bg-image text-center text-white p-5">
 
   <header class="container-fluid p-5">
     <section class="row justify-content-end">
@@ -35,10 +35,10 @@
       </section>
       <section class="row justify-content-center py-5">
         <div class="col-3 bg-dark p-5 bg-opacity-50 border border-white rounded">
-          <h1>Counter</h1>
+          <h1 id="homeScore" class="homeScore">0</h1>
         </div>
         <div class="col-3 bg-dark p-5 bg-opacity-50 border border-white rounded">
-          <h1>Counter</h1>
+          <h1 id="awayScore" class="awayScore">0</h1>
         </div>
       </section>
     </section>
@@ -47,12 +47,12 @@
       <section class="container py-5">
         <section class="row justify-content-around">
           <div class="col-3 justify-content-center">
-            <button class="bg-danger bg-opacity-50 rounded p-3" onclick="add1Button()">
+            <button class="bg-danger bg-opacity-50 rounded p-3" onclick="homeAdd1Button()">
               <h1>Home +1</h1>
             </button>
           </div>
           <div class="col-3">
-            <button class="bg-danger bg-opacity-50 rounded p-3">
+            <button class="bg-danger bg-opacity-50 rounded p-3" onclick="awayAdd1Button()">
               <h1>Away +1</h1>
             </button>
           </div>
@@ -62,12 +62,12 @@
       <section class="container py-2">
         <section class="row justify-content-around">
           <div class="col-3 justify-content-center">
-            <button class="bg-danger bg-opacity-50 rounded p-3">
+            <button class="bg-danger bg-opacity-50 rounded p-3" onclick="homeAdd3Button()">
               <h1>Home +3</h1>
             </button>
           </div>
           <div class="col-3">
-            <button class="bg-danger bg-opacity-50 rounded p-3">
+            <button class="bg-danger bg-opacity-50 rounded p-3" onclick="awayAdd3Button()">
               <h1>Away +3</h1>
             </button>
           </div>
